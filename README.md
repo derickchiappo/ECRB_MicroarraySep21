@@ -10,6 +10,6 @@ One part of my Ph.D. is to investigate if the expression of S100A12 and genes af
 There are two projects in this repository:
 
 1. Differential Gene Expression Analysis
-2. Relationship between differentially expressed genes and infiltrating immune cells 
+2. Gene Expression and inflitarting immune cells
 
 
