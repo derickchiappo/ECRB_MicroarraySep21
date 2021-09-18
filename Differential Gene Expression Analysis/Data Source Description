@@ -1,1 +1,4 @@
-
+The dataset used in this analysis was loaded into RStudio from the Gene Expression Omnibus (GEO) database from the dataset GSE104948. 
+GSE104948 was generated from running cDNA fromgenerated from patients with chronic kidney disease stored in the European Renal cDNA bank (ECRB). 
+Information on the ECRB's aim can be found at https://www.ekfs.de/en/scientific-funding/currently-funded-projects/european-renale-cdna-bank-kroner-fresenius-biopsiebank.
+Detailed information the sample type's avaliable can be found at https://www.refine.bio/experiments/GSE104948/glomerular-transcriptome-from-european-renal-cdna-bank-subjects-and-living-donors
