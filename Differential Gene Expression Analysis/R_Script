@@ -1,0 +1,14 @@
+volcanoplot <- 
+ggplot(sig_goi_AAVvsHC_glom,aes(x = 2^logFC, y = -log10(adj.P.Val),label = Symbol, color = Group)) + 
+geom_point() + 
+geom_hline(aes(yintercept = log10(0.05)),linetype = "dashed") + 
+geom_vline(xintercept = 1.5,color = "black",size = 0.5,linetype = "dashed") +
+
+#Graph customization
+Graph_Settings + 
+geom_label_repel(nudge_x = 0.1,nudge_y = -0.1,size = 3) + 
+scale_x_continuous(limits = c(-2,4),breaks = seq(-2,4,by = 1)) + 
+xlab("Fold Change")
+
+
+
