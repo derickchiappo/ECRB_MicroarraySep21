@@ -1,3 +1,42 @@
+#loading of packages 
+install.packages(c("BiocManager","pheatmap","ggpubr","ggrepel","RSQLite","tidyverse"))
+
+library(pheatmap)
+library(ggpubr)
+library(ggrepel)
+library(RSQLite)
+library(tidyverse)
+library(BiocManager)
+BiocManager::install(c("affy","limma","annotate",
+                     "AnnotationDbi","GEOquery",
+                    "org.Hs.eg.db","hgu133plus2.db"))
+library(affy)
+library(limma)
+library(annotate)
+library(AnnotationDbi)
+library(GEOquery)
+library(org.Hs.eg.db)
+library(hgu133plus2.db)
+
+#Graph variables, and aesthetics and functions for ggplot
+plot.mean <- function(x) { 
+  m <- mean(x,na.rm = TRUE) 
+  c(y = m, ymin = m, ymax =m) }
+
+plot.median <- function(x) { 
+  m <- median(x, na.rm = TRUE) 
+  c(y = m, ymin = m, ymax =m) }
+
+Graph_Settings <- 
+  theme(panel.background = element_rect(fill = "white"),axis.line = element_line(colour = "black"), 
+        axis.text = element_text(size = 12, color = "black"), axis.title = element_text(size = 12, color = "black", face = "bold"))
+
+
+
+
+
+
+
 volcanoplot <- 
 ggplot(sig_goi_AAVvsHC_glom,aes(x = 2^logFC, y = -log10(adj.P.Val),label = Symbol, color = Group)) + 
 geom_point() + 
