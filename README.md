@@ -9,9 +9,7 @@ One part of my Ph.D. is to investigate if the expression of S100A12 and genes af
 
 There are two projects in this repository:
 
-      1. Identification of target genes that are significantly upregulated 
-      2. Investigation of the relationship between the upregulated genes' expression and infiltration of the tissue by immune cells 
-      
-1. Identification of target genes that are significantly upregulated 
+1. Differential Gene Expression Analysis
+2. Relationship between differentially expressed genes and infiltrating immune cells 
 
 
